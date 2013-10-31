@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/Blackboard.js"></script>
+<script type="text/javascript" src="js/Grafico.js"></script>
+
+</head>
+<body>
+	<div style="background-color:#3FF; width:960px;" >
+    
+		<canvas id="mycanvas" height="500" width="500">
+        </canvas>    
+    </div>
+    <script type="text/javascript">
+	$(document).ready(function () {
+		//$('#mycanvas').drawCircle(90, 90, 200) ;
+		$('#mycanvas').changeColor('blue');
+		$('#mycanvas').drawLine(50, 50, 100, 100);
+		//$('#mycanvas').drawRectangle(100, 200, 300, 200);
+		//$('#mycanvas').drawTriangle(100, 200, 300, 200, 350, 450);
+		//$('#mycanvas').drawSquare(50, 50, 40);
+		//$('#mycanvas').drawText( 'Wardo', '200px Georgia', 350, 450);
+		// $('#mycanvas').drawPentagon(0, 0, 400, 0, 400, 300, 200, 500, 0, 300);
+		$('#mycanvas').drawImage('img/icon_book.gif' ,200, 200, 150, 150);
+		
+	});
+    </script>
+</body>
+</html>
