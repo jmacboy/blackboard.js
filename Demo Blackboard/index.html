@@ -2,29 +2,42 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
-<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="js/Blackboard.js"></script>
-<script type="text/javascript" src="js/Grafico.js"></script>
+<title>Blackboard Demo</title>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>  <!-- required   -->
+<script type="text/javascript" src="js/Blackboard.js"></script>  <!-- plugin for drawing   -->
 
 </head>
-<body>
-	<div style="background-color:#3FF; width:960px;" >
+<body style="background-color:#CCC">
+	<div style="width:960px; margin:0 auto;" >
     
-		<canvas id="mycanvas" height="500" width="500">
+		<canvas id="mycanvas" height="600" width="800">
         </canvas>    
     </div>
     <script type="text/javascript">
 	$(document).ready(function () {
-		//$('#mycanvas').drawCircle(90, 90, 200) ;
+		// Uses the id of your canvas, these are examples about the pluggin.
+		
 		$('#mycanvas').changeColor('blue');
-		$('#mycanvas').drawLine(50, 50, 100, 100);
-		//$('#mycanvas').drawRectangle(100, 200, 300, 200);
-		//$('#mycanvas').drawTriangle(100, 200, 300, 200, 350, 450);
-		//$('#mycanvas').drawSquare(50, 50, 40);
-		//$('#mycanvas').drawText( 'Wardo', '200px Georgia', 350, 450);
-		// $('#mycanvas').drawPentagon(0, 0, 400, 0, 400, 300, 200, 500, 0, 300);
-		$('#mycanvas').drawImage('img/icon_book.gif' ,200, 200, 150, 150);
+		$('#mycanvas').drawLine(480, 410, 540, 410);
+		$('#mycanvas').drawLine(650, 410, 710, 410);
+		$('#mycanvas').drawLine(510, 380, 510, 440);
+		$('#mycanvas').drawLine(680, 380, 680, 440);
+		$('#mycanvas').drawRectangle(450, 350, 300, 200);
+		$('#mycanvas').drawRectangle(575, 450, 50, 100);
+		$('#mycanvas').drawCircle(585, 501, 5) ;
+		$('#mycanvas').drawTriangle(400, 350, 600, 200, 800, 350);
+		$('#mycanvas').drawSquare(480, 380, 60);
+		$('#mycanvas').drawSquare(650, 380, 60);
+		$('#mycanvas').drawText( 'HOME', '54px Georgia', 100, 150);
+		//$('#mycanvas').drawPentagon(0, 0, 400, 0, 400, 300, 200, 500, 0, 300);
+		$('#mycanvas').drawPentagon(0, 600, 0, 550, 25, 525, 50, 550, 50, 600);
+		$('#mycanvas').drawPentagon(50, 600, 50, 550, 75, 525, 100, 550, 100, 600);
+		$('#mycanvas').drawPentagon(100, 600, 100, 550, 125, 525, 150, 550, 150, 600);
+		$('#mycanvas').drawPentagon(150, 600, 150, 550, 175, 525, 200, 550, 200, 600);
+		$('#mycanvas').drawPentagon(200, 600, 200, 550, 225, 525, 250, 550, 250, 600);
+		$('#mycanvas').drawPentagon(250, 600, 250, 550, 275, 525, 300, 550, 300, 600);
+		$('#mycanvas').drawImage('img/arbol.png' ,200, 300, 250, 250);
 		
 	});
     </script>
